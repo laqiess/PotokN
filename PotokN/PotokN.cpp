@@ -67,18 +67,7 @@ void multiplyMatrices(vector<vector<int>>& matr1, vector<vector<int>>& matr2, ve
     }
 }
 
-// Функция для вывода матрицы
-void printMatrix(const vector<vector<int>>& matrix)
-{
-    for (const auto& row : matrix)
-    {
-        for (int num : row)
-        {
-            cout << num << " ";
-        }
-        cout << endl;
-    }
-}
+
 
 
 
@@ -142,12 +131,7 @@ int main()
         th.join();
     }
 
-    cout << endl;
-    printMatrix(matr1);
-    cout << endl;
-    printMatrix(matr2);
-    cout << endl;
-    printMatrix(result);
+    
 
     // конец измерения времени
     auto endTime = chrono::high_resolution_clock::now();

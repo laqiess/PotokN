@@ -1,0 +1,19 @@
+// Функция для вывода матрицы
+void printMatrix(const vector<vector<int>>& matrix)
+{
+    for (const auto& row : matrix)
+    {
+        for (int num : row)
+        {
+            cout << num << " ";
+        }
+        cout << endl;
+    }
+
+
+cout << endl;
+    printMatrix(matr1);
+    cout << endl;
+    printMatrix(matr2);
+    cout << endl;
+    printMatrix(result);
